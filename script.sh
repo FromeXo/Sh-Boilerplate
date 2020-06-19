@@ -3,7 +3,7 @@
 # Default Script Vars
 readonly SCRIPT_VERSION=0.0.0
 readonly SCRIPT_PATH=$(realpath "$0")
-readonly SCRIPT_NAME=${SCRIPT_PATH##*/}
+readonly SCRIPT_FILE=${SCRIPT_PATH##*/}
 readonly SCRIPT_DIR=${SCRIPT_PATH%/*}
 
 if [ -e "$SCRIPT_DIR/functions.sh" ]; then
